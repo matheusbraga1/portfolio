@@ -309,11 +309,20 @@ section {
 
 .article-container {
     display: flex;
-    text-align: initial;
+    align-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.article-container article {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    flex: 0 0 10rem;
+    text-align: left;
 }
 
 .article-container h3, .article-container p {
